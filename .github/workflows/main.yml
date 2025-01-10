@@ -28,7 +28,7 @@ jobs:
       run: echo "No build step required for HTML"
 
     - name: Deploy to GitHub Pages
-  uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.PAT_TOKEN }}  # Ganti dengan PAT yang baru
-    publish_dir: ./  # Assuming your index.html is in the root directory
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.PAT_TOKEN }}  # Ganti dengan PAT yang baru
+        publish_dir: ./  # Assuming your index.html is in the root directory
